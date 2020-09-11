@@ -1,22 +1,21 @@
 // Write your Character component here
-import React from 'react'
+import React, {useState,useEffect} from 'react'
 import styled from 'styled-components'
 
-
+const StyleDiv = styled.div`
+    background-color:opacity .5 black;
+`
 
 const Character = props => {
     const {data} = props
     console.log(data)
-    return('')
-           
-            // data.map(eachpoke => {
-            //   return (
-            //    <div className = 'pokeName'>
-            //        <h1>{eachpoke.name}</h1>
-            //        <a href={eachpoke.url}>Data</a>
-            //    </div>
-            //   )
-            // })
+    return(  
+     <StyleDiv className = 'pokeName'>
+      <h1>{data.name}</h1>
+      <a href={data.url}>Data</a>
+     </StyleDiv>
+              
+    )        
           
           
         

@@ -9,7 +9,7 @@ const App = () => {
     axios.get(`https://pokeapi.co/api/v2/pokemon-species/?offset=151&limit=20`)
     .then((res) =>{
       setpdb(res.data.results)
-      console.log(res)
+      console.log()
       
     })
   },[]
