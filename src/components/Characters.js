@@ -11,8 +11,8 @@ const StyleDiv = styled.div`
 
 const Character = props => {
    const {data} = props
-    
-
+    const newArray = [...data]
+console.log(newArray)
 // return()
 //     data.forEach(eachPoke => {
 //         return(
@@ -23,27 +23,13 @@ const Character = props => {
 //       )
 //     })
     
-    
+    return newArray.map((eachPoke) =>{
         return(
               <StyleDiv className = 'pokeName'>  
-                <h1>{data.name}</h1>                 
-                <a href={data.url}>Data</a>
+                <h1>{eachPoke.name}</h1>                 
+                <a href={eachPoke.url}>Data</a>
                </StyleDiv>
                )
-
+    })
     
        
-             
-           
-                        
-                            
-                            
-           
- 
-          
-          
-        
-   
-}
-
-export default Character
