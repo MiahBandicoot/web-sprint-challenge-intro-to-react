@@ -37,6 +37,7 @@ React JS is used to render U.I. components.
 Component state is what controls how a component is rendered and how it acts using mutable information.
 
 1. Describe props.
+
 Props are a keyword used to pass data from one component to another in a single direction.
 
 
